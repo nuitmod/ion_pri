@@ -1,6 +1,8 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import React from 'react';
-import mode from '../img/mode.jpg'
+//import mode from '../img/mode.jpg'
+import Header from './Header'
+import Main from './Main'
 
 const Home: React.FC = () => {
   return (
@@ -8,17 +10,11 @@ const Home: React.FC = () => {
       <IonHeader>
         <IonToolbar>
           <IonTitle>Ionic proj</IonTitle>
+          <Header />
         </IonToolbar>
       </IonHeader>
       <IonContent className="ion-padding">
-      <div>
-        <div>
-          <h5>ini pwa amp</h5>
-        </div>
-        <div>
-          <img src={mode} alt="HTML5" height="229" width="129" />
-        </div>
-      </div>
+          <Main />
       </IonContent>
     </IonPage>
   );
