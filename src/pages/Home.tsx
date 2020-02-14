@@ -3,18 +3,23 @@ import React from 'react';
 //import mode from '../img/mode.jpg'
 import Header from './Header'
 import Main from './Main'
+import Mode from './Mode'
+import Rii from './Rii'
+import Footer from "./Footer"
+import Checklist from "./Checklist"
 
 const Home: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
-        <IonToolbar>
-          <IonTitle>Ionic proj</IonTitle>
-          <Header />
-        </IonToolbar>
+        <Header />
       </IonHeader>
       <IonContent className="ion-padding">
-          <Main />
+        <Main />
+        <Mode />
+        <Rii />
+        <Checklist />
+        <Footer />
       </IonContent>
     </IonPage>
   );
